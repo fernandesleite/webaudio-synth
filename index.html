@@ -6,7 +6,6 @@
   <title>Web Audio Synth</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/synth.css" />
-  
 </head>
 <body>
   <div class="container">
@@ -21,6 +20,8 @@
       </select>
       <label for="vol_id">Gain</label>
       <input type="range" min="0" max="1" step="0.01" id="vol_osc1">
+      <label for="vol_id">Detune</label>
+      <input type="range" min="0" max="100" step="0.01" id="det_osc1">
     </div>
     <div class="osc2">
       <label for="waveforms2">Osc 2</label>
@@ -30,8 +31,10 @@
         <option value="sawtooth">Saw</option>
         <option value="triangle">Triangle</option>
       </select>
-        <label for="vol_id">Gain</label>
-        <input type="range" min="0" max="1" step="0.01" id="vol_osc2">
+      <label for="vol_id">Gain</label>
+      <input type="range" min="0" max="1" step="0.01" id="vol_osc2">
+      <label for="vol_id">Detune</label>
+      <input type="range" min="0" max="100" step="0.01" id="det_osc2">
     </div>
     <div class="osc3">
       <label for="waveforms3">Osc 3</label>
@@ -41,12 +44,11 @@
         <option value="sawtooth">Saw</option>
         <option value="triangle">Triangle</option>
       </select>
-        <label for="vol_id">Gain</label>
-        <input type="range" min="0" max="1" step="0.01" id="vol_osc3">
+      <label for="vol_id">Gain</label>
+      <input type="range" min="0" max="1" step="0.01" id="vol_osc3">
+      <label for="vol_id">Detune</label>
+      <input type="range" min="0" max="100" step="0.01" id="det_osc3">
     </div>
-
-    
-
   </div>
 </body>
   <script src="js/synth.js"></script>
