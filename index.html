@@ -9,47 +9,55 @@
 </head>
 <body>
   <div class="container">
-    <button id="osc">Osc Test</button>
-    <div class="osc1">
-      <label for="waveforms1">Osc 1</label>
-      <select name="waveforms" id="waveforms1">
-        <option value="sine">Sine</option>
-        <option value="square">Square</option>
-        <option value="sawtooth">Saw</option>
-        <option value="triangle">Triangle</option>
-      </select>
-      <label for="vol_id">Gain</label>
-      <input type="range" min="0" max="1" step="0.01" id="vol_osc1">
-      <label for="vol_id">Detune</label>
-      <input type="range" min="0" max="100" step="0.01" id="det_osc1">
-    </div>
-    <div class="osc2">
-      <label for="waveforms2">Osc 2</label>
-      <select name="waveforms" id="waveforms2">
-        <option value="sine">Sine</option>
-        <option value="square">Square</option>
-        <option value="sawtooth">Saw</option>
-        <option value="triangle">Triangle</option>
-      </select>
-      <label for="vol_id">Gain</label>
-      <input type="range" min="0" max="1" step="0.01" id="vol_osc2">
-      <label for="vol_id">Detune</label>
-      <input type="range" min="0" max="100" step="0.01" id="det_osc2">
-    </div>
-    <div class="osc3">
-      <label for="waveforms3">Osc 3</label>
-      <select name="waveforms" id="waveforms3">
-        <option value="sine">Sine</option>
-        <option value="square">Square</option>
-        <option value="sawtooth">Saw</option>
-        <option value="triangle">Triangle</option>
-      </select>
-      <label for="vol_id">Gain</label>
-      <input type="range" min="0" max="1" step="0.01" id="vol_osc3">
-      <label for="vol_id">Detune</label>
-      <input type="range" min="0" max="100" step="0.01" id="det_osc3">
+    <div class="osc_session">
+      <button id="osc">Osc Test</button>
+      <div class="osc1">
+        <label for="waveforms1">Osc 1</label>
+        <select name="waveforms" id="waveforms1">
+          <option value="sine">Sine</option>
+          <option value="square">Square</option>
+          <option value="sawtooth">Saw</option>
+          <option value="triangle">Triangle</option>
+        </select>
+        <label for="vol_osc1">Gain</label>
+        <input type="range" min="0" max="1" step="0.01" id="vol_osc1">
+        <label for="det_osc1">Detune</label>
+        <input type="range" min="0" max="100" step="0.01" id="det_osc1">
+        <label for="pan_osc1">Pan</label>
+        <input type="range" min="-1" max="1" step="0.01" id="pan_osc1">
+      </div>
+      <div class="osc2">
+        <label for="waveforms2">Osc 2</label>
+        <select name="waveforms" id="waveforms2">
+          <option value="sine">Sine</option>
+          <option value="square">Square</option>
+          <option value="sawtooth">Saw</option>
+          <option value="triangle">Triangle</option>
+        </select>
+        <label for="vol_osc2">Gain</label>
+        <input type="range" min="0" max="1" step="0.01" id="vol_osc2">
+        <label for="det_osc2">Detune</label>
+        <input type="range" min="0" max="100" step="0.01" id="det_osc2">
+        <label for="pan_osc2">Pan</label>
+        <input type="range" min="-1" max="1" step="0.01" id="pan_osc2">        
+      </div>
+      <div class="osc3">
+        <label for="waveforms3">Osc 3</label>
+        <select name="waveforms" id="waveforms3">
+          <option value="sine">Sine</option>
+          <option value="square">Square</option>
+          <option value="sawtooth">Saw</option>
+          <option value="triangle">Triangle</option>
+        </select>
+        <label for="vol_osc3">Gain</label>
+        <input type="range" min="0" max="1" step="0.01" id="vol_osc3">
+        <label for="det_osc3">Detune</label>
+        <input type="range" min="0" max="100" step="0.01" id="det_osc3">
+        <label for="pan_osc3">Pan</label>
+        <input type="range" min="-1" max="1" step="0.01" id="pan_osc3">
+      </div>
     </div>
   </div>
 </body>
-  <script src="js/synth.js"></script>
+  <script src="js/synth-circuit.js"></script>
 </html>
